@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "755bd56e-589f-4ee0-9ee7-52ab1499c6b4": {
+      "ProjectGuid": "755bd56e-589f-4ee0-9ee7-52ab1499c6b4",
+      "DisplayName": "TodoAPI",
+      "ColorIndex": 0
+    },
+    "e34bfc69-14b7-4a9c-bd8c-6adb8a367254": {
+      "ProjectGuid": "e34bfc69-14b7-4a9c-bd8c-6adb8a367254",
+      "DisplayName": "TodoAPITestProject",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "d1796169-7c2d-48f4-8b44-152084643460",
+		"name": "TodoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"sedya\",\r\n  \"email\": \"sedyaulucay@hotmail.com\",\r\n  \"password\": \"SedyaUlucay1!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}Authentication/Register",
+					"host": [
+						"{{url}}Authentication"
+					],
+					"path": [
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"sedya\",\r\n  \"password\": \"SedyaUlucay1!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}Authentication/Login",
+					"host": [
+						"{{url}}Authentication"
+					],
+					"path": [
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TodoItem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}TodoItem",
+					"host": [
+						"{{url}}TodoItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TodoItem/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"itemId\": 0,\r\n    \"itemName\": \"Develop todo item project\",\r\n    \"itemDescription\": \"Develop todo item project\",\r\n    \"itemStatus\": true\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}TodoItem/{{id}}",
+					"host": [
+						"{{url}}TodoItem"
+					],
+					"path": [
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TodoItem/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"itemId\": 0,\r\n    \"itemName\": \"Develop todo item project\",\r\n    \"itemDescription\": \"Develop todo item project\",\r\n    \"itemStatus\": true\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}TodoItem/{{id}}",
+					"host": [
+						"{{url}}TodoItem"
+					],
+					"path": [
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TodoItem/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"itemId\": 0,\r\n    \"itemName\": \"Develop todo item project\",\r\n    \"itemDescription\": \"Develop todo item project\",\r\n    \"itemStatus\": true\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}TodoItem/{{id}}",
+					"host": [
+						"{{url}}TodoItem"
+					],
+					"path": [
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TodoItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\": 0,\r\n    \"itemName\": \"Develop todo item project\",\r\n    \"itemDescription\": \"Develop todo item project\",\r\n    \"itemStatus\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}TodoItem",
+					"host": [
+						"{{url}}TodoItem"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
